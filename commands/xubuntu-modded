@@ -1,0 +1,4 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Starting Xubuntu Modded by CLI
+proot-distro login xubuntu-modded --user user
