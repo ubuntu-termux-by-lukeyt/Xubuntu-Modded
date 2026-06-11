@@ -17,15 +17,17 @@ echo -e "\033[32mAllowing External Storage\033[0m"
 termux-setup-storage
 sleep 10
 clear
-wget https://github.com/ubuntu-termux-by-lukeyt/Xubuntu-Modded/releases/download/Xubuntu-Modded-Rootfs/xubuntu-modded-backup.tar.gz
+wget https://github.com/LukeYT-Xubuntu-Modded/Xubuntu-Modded/releases/download/Xubuntu-Modded-Rootfs/xubuntu-modded-backup.tar.gz
 clear
 echo -e "\033[32mInstalling Xubuntu-Modded\033[0m"
 proot-distro restore ./xubuntu-modded-backup.tar.gz
 clear
-wget -P /data/data/com.termux/files/usr/bin https://github.com/ubuntu-termux-by-lukeyt/Xubuntu-Modded/raw/refs/heads/main/commands/xubuntu-modded
-wget -P /data/data/com.termux/files/usr/bin https://github.com/ubuntu-termux-by-lukeyt/Xubuntu-Modded/raw/refs/heads/main/commands/xubuntu-modded-x11
+wget -P /data/data/com.termux/files/usr/bin https://github.com/LukeYT-Xubuntu-Modded/Xubuntu-Modded/raw/refs/heads/main/commands/xubuntu-modded
+wget -P /data/data/com.termux/files/usr/bin https://github.com/LukeYT-Xubuntu-Modded/Xubuntu-Modded/raw/refs/heads/main/commands/xubuntu-modded-x11
+wget -P /data/data/com.termux/files/usr/bin https://github.com/LukeYT-Xubuntu-Modded/Xubuntu-Modded/raw/refs/heads/main/commands/uninstall-xubuntu-modded
 chmod +x /data/data/com.termux/files/usr/bin/xubuntu-modded
 chmod +x /data/data/com.termux/files/usr/bin/xubuntu-modded-x11
+chmod +x /data/data/com.termux/files/usr/bin/uninstall-xubuntu-modded
 clear
 echo -e "\e[32mDone! You're done!\e[0m"
 echo -e "\e[32mYou can login to Xubuntu Modded by command: xubuntu-modded\e[0m"
